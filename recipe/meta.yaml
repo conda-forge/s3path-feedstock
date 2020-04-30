@@ -1,5 +1,5 @@
 {% set name = "s3path" %}
-{% set version = "0.1.91" %}
+{% set version = "0.1.92" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c1f9eb0509dfd15d18250e1f2ecfd30149199546a03a3f16f3c5170d1553e570
+  sha256: 2992082c72f557a4c9b056b54fa54a22b9bfa77d3838857bb37baf81f8a2b24a
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'Pathlib Extension for AWS S3 Service, to provide File-System/Path like interface'
+  summary: Pathlib Extension for AWS S3 Service, to provide File-System/Path like interface
 
 extra:
   recipe-maintainers:

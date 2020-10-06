@@ -1,5 +1,5 @@
 {% set name = "s3path" %}
-{% set version = "0.2.101" %}
+{% set version = "0.2.201" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5ac4be27ec140d9232a33ebde79abd1de28fc7d19bda926b0cc734d684c2b11
+  sha256: b539f61df7411f90aa74e1ab23ae984e5eccca3766e1bab84d4a9f696f36d3c2
 
 build:
   number: 0

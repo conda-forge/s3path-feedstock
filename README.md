@@ -5,11 +5,9 @@ Home: https://github.com/liormizr/s3path
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/s3path-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pathlib Extension for AWS S3 Service, to provide File-System/Path like interface
-
-
 
 Current build status
 ====================

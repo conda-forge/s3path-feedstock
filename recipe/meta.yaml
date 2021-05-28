@@ -10,7 +10,7 @@ source:
   sha256: 5f3ec4021febfb06c2329f82fc96fb7997fc72ea9bbd2b7e894bb38ab39fc94c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,6 +20,8 @@ requirements:
     - python >=3.5
   run:
     - python >=3.5
+    - boto3 >=1.16.35
+    - smart_open
 
 test:
   imports:

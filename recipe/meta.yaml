@@ -17,11 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.6
   run:
-    - python >=3.5
+    - python >=3.6
     - boto3 >=1.16.35
     - smart_open
+    - packaging
 
 test:
   imports:

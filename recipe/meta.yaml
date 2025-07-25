@@ -10,25 +10,28 @@ source:
   sha256: 1006cf38e17c5af031ed8808f8aa9bb7ced06fc8ce3ea92a7e3639290711e5d2
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
     - boto3 >=1.16.35
-    - smart_open
-    - packaging
+    - smart_open >=5.1.0
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - s3path
+  commands:
+    - pip check
 
 about:
   home: https://github.com/liormizr/s3path

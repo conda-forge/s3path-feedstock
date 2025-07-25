@@ -31,7 +31,7 @@ test:
     - pip
   imports:
     - s3path
-  run:
+  commands:
     - pip check
 
 about:

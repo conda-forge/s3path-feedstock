@@ -22,8 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - boto3 >=1.16.35
-    - smart_open
-    - packaging
+    - smart_open >=5.1.0
 
 test:
   requires:
